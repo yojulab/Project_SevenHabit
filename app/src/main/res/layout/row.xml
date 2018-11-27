@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+		android:paddingRight="10px" android:paddingLeft="10px">
+	<TextView android:layout_height="wrap_content" android:id="@+id/id"
+		android:text="TextView"
+		android:layout_width="wrap_content" android:textSize="25sp"
+		android:layout_weight="1"
+		android:paddingRight="10dp"></TextView>
+	<TextView android:layout_height="wrap_content" android:id="@+id/habit"
+		android:text="TextView" android:paddingRight="5px" android:padding="3px"
+		android:layout_width="wrap_content" android:textSize="25sp"
+		android:layout_weight="1"></TextView>
+</LinearLayout>

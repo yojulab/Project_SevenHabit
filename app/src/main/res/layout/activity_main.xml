@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/background1"
+    android:padding="5dp">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="0px">
+        <ImageView android:src="@drawable/elysiumlogo" android:id="@+id/imageView1"
+            android:layout_height="80px" android:layout_width="70px"
+            android:layout_margin="3px"
+            android:onClick="onShowMap"
+            android:clickable="true"></ImageView>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Do you really want to set up your BAD HABIT? THERE'S THE WAY. YOU JUST DO IT."
+            android:layout_weight="5" android:padding="5px" android:textSize="20px"
+            android:textStyle="bold" android:gravity="left"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_marginBottom="1px">
+        <ImageView android:src="@drawable/leftarrow" android:id="@+id/larrow"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:layout_margin="3px" android:gravity="center"></ImageView>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:id="@+id/plandate"
+            android:layout_weight="5" android:textSize="60sp" android:textStyle="bold"
+            android:gravity="center"></TextView>
+        <ImageView android:src="@drawable/rightarrow" android:id="@+id/rarrow"
+            android:layout_height="49dp" android:layout_width="wrap_content"
+            android:layout_margin="3px" android:gravity="center"></ImageView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:orientation="horizontal">
+        <ListView android:id="@+id/resultList" android:choiceMode="singleChoice"
+            android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+        <TextView android:text="Please, Input Bad Habits!"
+            android:id="@android:id/empty" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</LinearLayout>
