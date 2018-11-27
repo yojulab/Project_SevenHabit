@@ -1,51 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:padding="5dp">
-	<LinearLayout android:layout_width="match_parent"
-		android:layout_height="wrap_content" android:layout_marginBottom="0px"
-		tools:ignore="UseCompoundDrawables">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="5"
-			android:gravity="left"
-			android:padding="5px"
-			android:text="Do you really want to set up your BAD HABIT? THERE'S THE WAY. YOU JUST DO IT."
-			android:textSize="12sp"
-			android:textStyle="bold"
-			tools:ignore="HardcodedText,InefficientWeight,PxUsage"></TextView>
-	</LinearLayout>
-	<LinearLayout android:orientation="vertical"
-		android:layout_width="match_parent" android:layout_height="wrap_content">
-		<TextView android:layout_height="wrap_content"
-			android:layout_width="fill_parent" android:id="@+id/text"
-			android:text="" android:visibility="gone"></TextView>
-		<EditText android:layout_height="wrap_content" android:id="@+id/edit"
-			android:layout_width="match_parent" android:hint="Input Text"
-			tools:ignore="HardcodedText"></EditText>
-	</LinearLayout>
-	<LinearLayout android:layout_width="match_parent"
-		android:layout_height="wrap_content">
-		<Button android:text="Add" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:id="@+id/add"
-			android:layout_weight="1"
-			tools:ignore="HardcodedText"></Button>
-		<Button android:text="Mod" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:id="@+id/mod"
-			android:layout_weight="1"
-			tools:ignore="HardcodedText"></Button>
-		<Button android:text="Del" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:id="@+id/del"
-			android:layout_weight="1"
-			tools:ignore="HardcodedText"></Button>
-	</LinearLayout>
-	<ListView android:id="@android:id/list" android:choiceMode="singleChoice"
-		android:layout_height="wrap_content" android:layout_width="wrap_content"></ListView>
-	<TextView android:text="nothing note" android:id="@android:id/empty"
-		android:layout_width="wrap_content" android:layout_height="wrap_content"
-		tools:ignore="HardcodedText"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0px"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="left"
+            android:padding="5px"
+            android:text="Do you really want to set up your BAD HABIT? THERE'S THE WAY. YOU JUST DO IT."
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,InefficientWeight,PxUsage"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"></TextView>
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Text"
+            tools:ignore="HardcodedText"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add"
+            tools:ignore="HardcodedText"></Button>
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modify"
+            tools:ignore="HardcodedText"></Button>
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            tools:ignore="HardcodedText"></Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"></ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nothing note"
+        tools:ignore="HardcodedText"></TextView>
 </LinearLayout>

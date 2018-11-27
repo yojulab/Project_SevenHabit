@@ -10,15 +10,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
         android:gravity="left"
         android:padding="5px"
         android:text="Do you really want to set up your BAD HABIT? THERE'S THE WAY. YOU JUST DO IT."
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/rarrow"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
 
@@ -26,27 +26,24 @@
         android:id="@+id/larrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:gravity="center"
         android:src="@drawable/leftarrow"
         app:layout_constraintEnd_toStartOf="@+id/plandate"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"></ImageView>
 
     <TextView
         android:id="@+id/plandate"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
+        android:text="Plan Date"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rarrow"
         app:layout_constraintEnd_toStartOf="@+id/rarrow"
         app:layout_constraintStart_toEndOf="@+id/larrow"
         app:layout_constraintTop_toBottomOf="@+id/textView3"></TextView>
@@ -57,7 +54,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:src="@drawable/rightarrow"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/plandate"
         app:layout_constraintTop_toBottomOf="@+id/textView3"></ImageView>
 
@@ -65,21 +62,32 @@
     <ListView
         android:id="@+id/resultList"
         android:layout_width="0dp"
-        android:layout_height="413dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:choiceMode="singleChoice"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/plandate"></ListView>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
-        android:text="Please, Input Bad Habits!"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        android:text="Please, Input Bad Habits!"></TextView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="8dp" />
 
 </android.support.constraint.ConstraintLayout>

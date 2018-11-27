@@ -2,4 +2,5 @@
     <string name="hello">Hello World, DB1!</string>
     <string name="app_name">Seven Habit</string>
     <string name="menu_insert">Add Item</string>
+    <string name="menu_edit">Edit Item</string>
 </resources>

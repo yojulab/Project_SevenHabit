@@ -34,12 +34,12 @@ public class NoteOpenHelper extends SQLiteOpenHelper implements Constants{
         onCreate(db);
     }
     public void addSamples(SQLiteDatabase db) {
-        addSample(db, "밥먹기 전에 공양게송하기", "20110605", "99999999");
-        addSample(db, "적당량을 덜어 남김없이 먹기", "20110610", "99999999");
+//        addSample(db, "밥먹기 전 공양게송하기", "20110605", "99999999");
+        addSample(db, "적당량 덜어 남김없이 먹기", "20110610", "99999999");
         addSample(db, "고기 적게 먹고 채식하기", "20110610", "99999999");
         addSample(db, "내 컵 가지고 다니며 쓰기", "20110615", "99999999");
-        addSample(db, "휴지대신 손수건 가지고 다니며 쓰기", "20110620", "99999999");
-        addSample(db, "쓰지 않는 전기코드뽑기", "20110610", "99999999");
+        addSample(db, "휴지 대신 손수건 쓰기", "20110620", "99999999");
+        addSample(db, "쓰지 않는 전기코드 뽑기", "20110610", "99999999");
         addSample(db, "대중교통 이용하기", "20110620", "99999999");
         addSample(db, "충동구매 하지 않기", "20110620", "99999999");
         addSample(db, "인스턴트 식품 먹지 않기", "20110610", "99999999");

@@ -8,7 +8,7 @@ interface Constants {
     static final String dateFormat = "yyyy-MM-dd";
 
     static final String DB = "sevenhabit.db";
-    static final int VERSION = 4;
+    static final int VERSION = 1;
 
     static final String T_HABITS = "habits";
     static final String C_ID = "_id";
