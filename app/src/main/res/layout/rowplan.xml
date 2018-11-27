@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent" android:layout_height="match_parent"
-	android:paddingRight="10px" android:paddingLeft="10px">
-	<TextView android:layout_height="wrap_content" android:id="@+id/habit"
-		android:text="Bad Habit" android:padding="3px" android:layout_width="match_parent"
-		android:textSize="25sp" android:layout_weight="7"></TextView>
-	<TextView android:layout_height="wrap_content" android:id="@+id/doneTF"
-		android:text="N" android:padding="3px" android:layout_width="wrap_content"
-		android:textSize="30sp" android:layout_weight="1"></TextView>
-</LinearLayout>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/habit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3px"
+        android:text="Bad Habit"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/doneTF"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/doneTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        android:text="N"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/habit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/habit"></TextView>
+</android.support.constraint.ConstraintLayout>

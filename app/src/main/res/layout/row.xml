@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent" android:layout_height="match_parent"
-		android:paddingRight="10px" android:paddingLeft="10px">
-	<TextView android:layout_height="wrap_content" android:id="@+id/id"
-		android:text="TextView"
-		android:layout_width="wrap_content" android:textSize="25sp"
-		android:layout_weight="1"
-		android:paddingRight="10dp"></TextView>
-	<TextView android:layout_height="wrap_content" android:id="@+id/habit"
-		android:text="TextView" android:paddingRight="5px" android:padding="3px"
-		android:layout_width="wrap_content" android:textSize="25sp"
-		android:layout_weight="1"></TextView>
-</LinearLayout>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="01"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/habit"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        android:paddingRight="5px"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+</android.support.constraint.ConstraintLayout>
